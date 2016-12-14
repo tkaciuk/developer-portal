@@ -1,0 +1,28 @@
+{
+  "name": "dev-portal",
+  "homepage": "http://YOUR_CLIENT_BUCKET_NAME.s3-website-YOUR_PRIMARY_AWS_REGION.amazonaws.com/",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.7.0"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^1.7.0",
+    "aws-sdk": "^2.7.6",
+    "chart.js": "^2.4.0",
+    "jquery": "^3.1.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "^4.0.0-alpha.6",
+    "semantic-ui-css": "^2.2.4",
+    "semantic-ui-react": "^0.61.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "upload-site": "cd .. && npm run upload-site && cd dev-portal",
+    "win-upload-site": "cd .. && npm run win-upload-site && cd dev-portal"
+  }
+}
