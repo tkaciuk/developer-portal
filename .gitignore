@@ -33,5 +33,12 @@ jspm_packages
 # Optional npm cache directory
 .npm
 
+.idea
+
 # Optional REPL history
 .node_repl_history
+
+npm-debug.log
+.DS_Store
+packaged-sam.yaml
+cognito.js
