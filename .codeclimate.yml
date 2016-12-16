@@ -42,3 +42,6 @@ exclude_paths:
   - '**/DeepFramework.js'
   - '**/deep-framework.js'
   - '**/src/deep-root-*'
+  - '**/dev-portal/public/apigateway-js-sdk'
+  - '**/scripts'
+  - '**/lambdas'
