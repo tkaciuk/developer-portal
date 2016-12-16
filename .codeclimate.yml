@@ -45,3 +45,4 @@ exclude_paths:
   - '**/dev-portal/public/apigateway-js-sdk'
   - '**/scripts'
   - '**/lambdas'
+  - '**/src'
