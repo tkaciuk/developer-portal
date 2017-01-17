@@ -117,7 +117,7 @@ export ATM_JS="$ATM_API_BASE/atm-admin/$ATM_API_PROPERTY/atm.min.js"
 
 > DON'T construct ATM_JS manually because the structure might be changed in future. Always use `$response.BuildPath` value.
 
-### Step 3. Place `atm.min.js` to the buttom of the web page
+### Step 3. Place `atm.min.js` to the bottom of the web page
 
 ```html
   <!-- Place It At The End of The Content Page -->
