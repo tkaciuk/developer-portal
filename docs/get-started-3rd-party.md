@@ -53,7 +53,8 @@ curl -XPUT "$ATM_API_BASE/atm-admin/api-gateway-key/create" \
 1.2 Save response as `environmental variable(s)` for further use:
 
 ```shell
-export ATM_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" // the value associated to `$response.Key`
+### export ATM_API_KEY as the value associated to `$response.Key`
+export ATM_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
 > Any further requests to ATM APIs must include this API key
@@ -108,9 +109,13 @@ curl -XPUT "$ATM_API_BASE/atm-admin/property/create" \
 2.2 Save response as `environmental variable(s)` for further use:
 
 ```shell
-export ATM_API_PROPERTY="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" // the value associated to `$response.Id`
-export ATM_JS="$ATM_API_BASE/atm-admin/$ATM_API_PROPERTY/atm.min.js" // the value associated to `$response.BuildPath`
+### export ATM_API_PROPERTY as the value associated to `$response.Id`
+export ATM_API_PROPERTY="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+### export ATM_JS as the value associated to `$response.BuildPath`
+export ATM_JS="$ATM_API_BASE/atm-admin/$ATM_API_PROPERTY/atm.min.js"
 ```
+
+> DON'T construct ATM_JS manually because the structure might be changed in future. Always use `$response.BuildPath` value.
 
 ### Step 3. Place `atm.min.js` to the buttom of the web page
 
