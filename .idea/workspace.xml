@@ -2,174 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b939a750-8f6c-49cd-8abb-aa2c08fa60ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/docs-atm.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.codeclimate.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.csslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.eslintignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/install_precommit.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/pre-commit" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/_head.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/_vars.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/coverage.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/install.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/node-scripts/CoverageComparator.es6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/node-scripts/CoverageComparator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/node-scripts/CoverageManager.es6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/node-scripts/CoverageManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/node-scripts/GitDiffWalker.es6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/node-scripts/GitDiffWalker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/node-scripts/GitHubMsgPublisher.es6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/node-scripts/GitHubMsgPublisher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/node-scripts/S3CoverageSynchronizer.es6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/node-scripts/S3CoverageSynchronizer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/phantomjs.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/posttest.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/preinstall.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/prepare-coverage.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/pretest.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/protractor.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/remove-coverage.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/test.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cloudformation/base.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/apigClient.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/lib/CryptoJS/components/enc-base64.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/lib/CryptoJS/components/hmac.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/lib/CryptoJS/rollups/sha256.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/lib/apiGatewayCore/sigV4Client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/lib/apiGatewayCore/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/lib/axios/dist/axios.standalone.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/apigateway-js-sdk/lib/url-template/url-template.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/jquery-2.1.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/sam-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/sdks/android_2016-10-21_19-26Z.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/sdks/javascript_2016-10-21_19-26Z.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/sdks/objectivec_2016-10-21_19-26Z.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/sdks/swift_2016-10-21_19-26Z.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/css/print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/css/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/css/screen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/css/typography.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/fonts/DroidSans-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/fonts/DroidSans.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/images/collapse.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/images/expand.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/images/explorer_icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/images/favicon-16x16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/images/favicon-32x32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/images/logo_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/images/pet_store_api.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/images/throbber.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/images/wordnik_api.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/geo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/ko-kr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/translator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/backbone-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/es5-shim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/handlebars-4.0.5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/highlight.9.1.0.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/highlight.9.1.0.pack_extended.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/jquery-1.8.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/jquery.ba-bbq.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/jquery.slideto.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/jquery.wiggle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/js-yaml.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/jsoneditor.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/lodash.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/marked.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/object-assign-pollyfill.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/sanitize-html.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/lib/swagger-oauth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/o2c.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/swagger-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/public/swagger-ui/dist/swagger-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/components/AlertPopup/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/components/ApiCatalog/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/components/App/App.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/components/App/App.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/components/App/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/components/Head/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/components/Register/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/components/SignIn/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/components/Usage/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/pages/ApiDetails/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/pages/Apis/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/pages/CaseStudies/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/pages/Dashboard/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/pages/GettingStarted/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/pages/Home.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/services/api-catalog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/services/api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/services/aws.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/services/self.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev-portal/src/services/swagger-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/.codeclimate.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/.csslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/.eslintignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/badges.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/get-started-3rd-party.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/_common/customers-controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/_common/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/backend/catalog.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/backend/dev-portal-express-proxy-api.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/backend/express-server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/backend/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/backend/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/cognito-cloudformation-custom-resource/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/cognito-cloudformation-custom-resource/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/cognito-user-pools-auto-confirm/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/listener/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/listener/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/listener/test/subscribe_event.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lambdas/listener/test/unsubscribe_event.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screen-apis.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screen-documentation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/screen-home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/deconfigure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/post-configure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/pre-configure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/deeploy.example.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tslint.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/description.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -431,12 +264,12 @@
       <workItem from="1485763241301" duration="7428000" />
       <workItem from="1485794184875" duration="1230000" />
       <workItem from="1485802450335" duration="2208000" />
-      <workItem from="1485950624268" duration="6615000" />
+      <workItem from="1485950624268" duration="6809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44487000" />
+    <option name="totallyTimeSpent" value="44681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
