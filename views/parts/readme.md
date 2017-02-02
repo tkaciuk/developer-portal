@@ -8,10 +8,10 @@ of AdTechMedia allows direct integration into any web site or web application as
 ### Base endpoints
 AdTechMedia platform runs multiple environments. The following are the base endpoints per environment:
 
-- [x] Production environment: https://api.adtechmedia.io/v1
-- [x] Development environment: https://api-dev.adtechmedia.io/v1
-- [ ] Staging environment: https://api-stage.adtechmedia.io/v1
-- [ ] Testing environment: https://api-test.adtechmedia.io/v1
+- Production environment: https://api.adtechmedia.io/v1
+- Development environment: https://api-dev.adtechmedia.io/v1
+- Staging environment: https://api-stage.adtechmedia.io/v1
+- Testing environment: https://api-test.adtechmedia.io/v1
 
 ### Authorization
 In order to make calls to ATM APIs, the HTTP request must include `X-Api-Key` as HTTP header.
