@@ -4,25 +4,22 @@
 # Dependency directories
 node_modules
 
+# Compiled pages
+web/index.html
+web/api-docs/*
+!web/api-docs/.gitkeep
+web/user-guide/*
+!web/user-guide/.gitkeep
+web/case-studies/*
+!web/case-studies/.gitkeep
+
 # Logs
 logs
 *.log
 npm-debug.log*
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
 
 # Grunt intermediate storage
 .grunt
 
 # Optional npm cache directory
 .npm
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz

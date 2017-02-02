@@ -1,0 +1,38 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Api docs{% endblock %}
+
+{% block css %}
+    <link href='/swagger/css/reset.css' rel='stylesheet' type='text/css'/>
+    <link href='/swagger/css/screen.css' rel='stylesheet' type='text/css'/>
+    <link href='/static/css/api-docs.css' rel='stylesheet' type='text/css'/>
+{% endblock %}
+
+{% block body %}
+    <div class="form-group col-md-3">
+        <label for="apiKey">Your API key</label>
+        <input type="text" class="form-control" id="apiKey" />
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="swagger-section gap-top-10">
+        <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src='/swagger/js/object-assign-pollyfill.js'></script>
+    <script src='/swagger/js/jquery.slideto.min.js'></script>
+    <script src='/swagger/js/jquery.wiggle.min.js'></script>
+    <script src='/swagger/js/jquery.ba-bbq.min.js'></script>
+    <script src='/swagger/js/handlebars-4.0.5.js'></script>
+    <script src='/swagger/js/lodash.min.js'></script>
+    <script src='/swagger/js/backbone-min.js'></script>
+    <script src='/swagger/js/swagger-ui.min.js'></script>
+    <script src='/swagger/js/highlight.9.1.0.pack.js'></script>
+    <script src='/swagger/js/highlight.9.1.0.pack_extended.js'></script>
+    <script src='/swagger/js/jsoneditor.min.js'></script>
+    <script src='/swagger/js/marked.js'></script>
+    <script src='/swagger/js/swagger-oauth.js'></script>
+    <script src='/static/js/api-docs.js'></script>
+{% endblock %}

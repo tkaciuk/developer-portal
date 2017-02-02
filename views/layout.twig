@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Adtechmedia docs{% endblock %}</title>
+
+    <link rel="stylesheet" href="/libs/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+
+    {% block css %}{% endblock %}
+    {#<link rel="icon" type="image/x-icon" href="" />#}
+</head>
+<body>
+    <nav class="navbar navbar-border">
+        <div class="container">
+            <a href="/" >
+                <img class="navbar-brand" src="/static/images/logo.svg">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container page-content">
+        {% block body %}{% endblock %}
+    </div>
+
+    <footer class="container-fluid text-center bottom-info">
+        Copyright &copy; <a href="//www.mitocgroup.com">Mitoc Group</a> 2016-2017. All rights reserved.
+        By using this site, you agree to <a href="//www.adtechmedia.io/terms/">Terms of Use</a> and <a href="//www.adtechmedia.io/privacy/">Privacy Policy</a>.
+    </footer>
+
+    <script src="/libs/js/jquery-3.1.1.min.js"></script>
+    <script src="/libs/js/jquery.browser.min.js"></script>
+    <script src="/libs/js/bootstrap.min.js"></script>
+    <script src="/static/js/main.js"></script>
+
+    {% block js %}{% endblock %}
+</body>
+</html>
