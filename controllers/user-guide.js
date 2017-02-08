@@ -19,7 +19,8 @@ router.get('/', function(req, res, next) {
 
   res.render('user-guide', {
     menuItems: menuItems,
-    markdown: readmeHtml
+    markdown: readmeHtml,
+    title: 'user-guide'
   });
 });
 

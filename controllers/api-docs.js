@@ -6,7 +6,7 @@ var router = express.Router();
  * [this page was built on top of https://github.com/swagger-api/swagger-ui]
  */
 router.get('/', function(req, res, next) {
-  res.render('api-docs');
+  res.render('api-docs', { title: 'api-docs'});
 });
 
 module.exports = router;

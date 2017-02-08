@@ -4,26 +4,46 @@
     <meta charset="UTF-8" />
     <title>{% block title %}Adtechmedia docs{% endblock %}</title>
 
-    <link rel="stylesheet" href="/libs/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/static/css/main.css" />
+    {#<link rel="stylesheet" href="/libs/css/bootstrap.min.css" />#}
+    <link rel="stylesheet" href="/static/css/main.min.css" />
+    <link rel="stylesheet" href="/static/css/font-awesome.css" />
 
     {% block css %}{% endblock %}
     {#<link rel="icon" type="image/x-icon" href="" />#}
 </head>
 <body>
-    <nav class="navbar navbar-border">
-        <div class="container">
-            <a href="/" >
-                <img class="navbar-brand" src="/static/images/logo.svg">
-            </a>
-        </div>
-    </nav>
+    <header>
+        <section>
+            <div class="flex-row">
+                <div class="flex-item-6 self-center">
+                    <a class="logo" href="/" >
+                        <img src="/static/images/logo.svg">
+                    </a>
+                </div>
+                <div class="flex-item-6 self-center">
+                    <nav class="clearfix">
+                        <ul class="pull-right">
+                            <li class="{{ title=='case-studies' ? 'active' : undefined }}">
+                                <a href="/case-studies">case studies</a>
+                            </li>
+                            <li class="{{ title=='api-docs' ? 'active' : undefined }}">
+                                <a href="/api-docs">api docs</a>
+                            </li>
+                            <li class="{{ title=='user-guide' ? 'active' : undefined }}">
+                                <a href="/user-guide">user guide</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
 
-    <div class="container page-content">
+    <main>
         {% block body %}{% endblock %}
-    </div>
+    </main>
 
-    <footer class="container-fluid text-center bottom-info">
+    <footer class="bottom-info">
         Copyright &copy; <a href="//www.mitocgroup.com">Mitoc Group</a> 2016-2017. All rights reserved.
         By using this site, you agree to <a href="//www.adtechmedia.io/terms/">Terms of Use</a> and <a href="//www.adtechmedia.io/privacy/">Privacy Policy</a>.
     </footer>

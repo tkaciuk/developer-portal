@@ -2,8 +2,88 @@
 
 {% block title %}Case studies{% endblock %}
 
-{% block body %}
-    <div class="gap-top-10"></div>
+{% block css %}
+    <link href='/static/css/case-studies.min.css' rel='stylesheet' type='text/css'/>
+{% endblock %}
 
-    <h1>Case studies page</h1>
+{% block body %}
+
+    <section>
+        <h1>Case studies</h1>
+
+        <div class="flex-row flex-gutter">
+            <div class="flex-item-6">
+                <div class="mockup">
+                    <img class="logo-img" src="/static/images/logo.svg" alt="AdTechMedia Platform">
+                    <div class="mockup-head">
+                        <div class="flex-row">
+                            <div class="flex-item-6">
+                                <h1>Article Title</h1>
+                            </div>
+                            <div class="flex-item-6 self-center">
+                                <div class="icons-cont text-right">
+                                    <i class="five">5¢</i>
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex-item-6 text-left">
+                                By John Smith, <i>author</i>
+                            </div>
+                            <div class="flex-item-6 text-right">September 22nd, 2016</div>
+                        </div>
+                    </div>
+                    <div class="mockup-cont">
+                        <img src="/static/images/mockup-image.jpg">
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable
+                            content of a page when looking at its layout.
+                        </p>
+                        <div class="blurry">
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable
+                                content of a page when looking at its layout. The point of using Lorem Ipsum
+                                is that it has a more-or-less normal distribution of letters, as opposed to using
+                                'Content here, content here', making it look like readable English.
+                            </p>
+                            <a href="#" class="btn">
+                                <i class="fa fa-lock"></i> Unlock Content
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item-6">
+                <div class="info-block">
+                    <a href="https://www.adtechmedia.io" class="case-logo">
+                        <img src="/static/images/logo.svg" alt="AdTechMedia Platform">
+                    </a>
+                    <p>
+                        <a href="https://www.adtechmedia.io">AdTechMedia</a> is an adtech platform with micropayments
+                        capabilities for media content. We help publishers and content providers to generate complimentary
+                        revenue streams that are immune to ad blocking software (e.g. native advertising or native
+                        micropayments). Our solutions are white labeled, data driven and realtime.
+                    </p>
+                    <p>
+                        AdTechMedia's patent pending plug-and-play technology enables publishers and content providers
+                        to let their users choose the ideal way they'd like to support content creation. Users can either
+                        decide to make frictionless micropayments or watch a single video ad to unlock content.
+                        Going this route, publishers can choose how much to charge for each article (e.g. 15 cents)
+                        or how long a video ad should be (e.g. 5 seconds).
+                    </p>
+                    <p>
+                        Focused on the best user experience, this platform is embeded in your web site or web
+                        app to provide amazing native look and feel. If you are publisher or content provider,
+                        looking for sustainable solutions to overcome the ad blocking problem, AdTechMedia is the answer.
+                    </p>
+                    <p>
+                        <a href="https://www-dev.adtechmedia.io/admin/accounts/signup">Register</a> or
+                        <a href="https://www-dev.adtechmedia.io/admin/accounts/signin">login</a> today!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

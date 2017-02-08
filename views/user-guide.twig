@@ -3,16 +3,17 @@
 {% block title %}User guide{% endblock %}
 
 {% block body %}
-    <div class="gap-top-10"></div>
 
-    <div>
-        {% for item in menuItems %}
-            <a href="#">{{ item }}</a>
-        {% endfor %}
-    </div>
+    <section>
+        <div>
+            {% for item in menuItems %}
+                <a href="#">{{ item }}</a>
+            {% endfor %}
+        </div>
 
-    <div>
-        {{ markdown }}
-    </div>
+        <div>
+            {{ markdown }}
+        </div>
+    </section>
 
 {% endblock %}

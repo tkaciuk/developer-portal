@@ -5,7 +5,7 @@ var router = express.Router();
  * Case studies page
  */
 router.get('/', function(req, res, next) {
-  res.render('case-studies', { title: 'Dimitrioglo' });
+  res.render('case-studies', { title: 'case-studies'});
 
 });
 

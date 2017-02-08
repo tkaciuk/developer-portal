@@ -26,3 +26,6 @@ npm-debug.log*
 
 # Folder attributes (MacOs)
 .DS_Store
+
+# Sass cache
+**/.sass-cache/

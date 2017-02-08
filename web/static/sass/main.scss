@@ -1,0 +1,155 @@
+@font-face {
+  font-family: FuturaICG;
+  src: url(../fonts/FuturaICG.ttf);
+}
+
+@font-face {
+  font-family: Futura-Light;
+  src: url(../fonts/Futura-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: #1b93f2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font: 30px Futura-Light, sans-serif;
+  color: #595959;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix {
+  &:before, &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.self-center {
+  align-self: center;
+  -webkit-align-self: center;
+}
+
+.flex-row {
+  display: flex;
+  &.flex-gutter {
+    margin: 0 -25px;
+    & > * {
+      padding: 0 25px;
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  .flex-row > .flex-item-#{$i} {
+    flex: 0 0 #{(100 / 12) * $i + '%'};
+    max-width: #{(100 / 12) * $i + '%'};
+  }
+}
+
+body {
+  font-family: FuturaICG, sans-serif;
+  color: #404040;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+header {
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  height: 70px;
+  section {
+    padding: 0;
+    height: 100%;
+  }
+
+  .flex-row {
+    height: 100%;
+  }
+
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+    img {
+      width: 180px;
+    }
+  }
+
+  nav {
+    li {
+      float: left;
+      list-style: none;
+      text-transform: uppercase;
+      margin: 0 0 0 25px;
+      &:hover, &.active {
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+main {
+  min-height: calc(100vh - 151px);
+}
+
+section {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.bottom-info {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  line-height: 50px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  font: 12px/30px FuturaICG, sans-serif;
+  background: #1b93f2;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 15px;
+  transition: 0.4s ease-in-out;
+  margin: 15px 0;
+  &:hover {
+    background: darken(#1b93f2, 10%);
+  }
+}

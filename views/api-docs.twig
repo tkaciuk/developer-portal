@@ -3,21 +3,23 @@
 {% block title %}Api docs{% endblock %}
 
 {% block css %}
-    <link href='/swagger/css/reset.css' rel='stylesheet' type='text/css'/>
+    {#<link href='/swagger/css/reset.css' rel='stylesheet' type='text/css'/>#}
     <link href='/swagger/css/screen.css' rel='stylesheet' type='text/css'/>
     <link href='/static/css/api-docs.css' rel='stylesheet' type='text/css'/>
 {% endblock %}
 
 {% block body %}
-    <div class="form-group col-md-3">
-        <label for="apiKey">Your API key</label>
-        <input type="text" class="form-control" id="apiKey" />
-    </div>
-    <div class="clearfix"></div>
+    <section>
+        <div class="form-group col-md-3">
+            <label for="apiKey">Your API key</label>
+            <input type="text" class="form-control" id="apiKey" />
+        </div>
+        <div class="clearfix"></div>
 
-    <div class="swagger-section gap-top-10">
-        <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
-    </div>
+        <div class="swagger-section gap-top-10">
+            <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
+        </div>
+    </section>
 {% endblock %}
 
 {% block js %}
