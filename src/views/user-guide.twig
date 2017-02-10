@@ -1,0 +1,19 @@
+{% extends 'layout.twig' %}
+
+{% block title %}User guide{% endblock %}
+
+{% block body %}
+
+    <section>
+        <div>
+            {% for item in menuItems %}
+                <a href="#">{{ item }}</a>
+            {% endfor %}
+        </div>
+
+        <div>
+            {{ markdown }}
+        </div>
+    </section>
+
+{% endblock %}

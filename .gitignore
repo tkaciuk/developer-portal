@@ -4,16 +4,14 @@
 # Dependency directories
 node_modules
 
+# Distribution folder
+dist/*
+!dist/.gitkeep
+
 # Logs
 logs
 *.log
 npm-debug.log*
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
 
 # Grunt intermediate storage
 .grunt
@@ -21,8 +19,12 @@ pids
 # Optional npm cache directory
 .npm
 
-# Optional REPL history
-.node_repl_history
+# Folder attributes (MacOs)
+.DS_Store
 
-# Output of 'npm pack'
-*.tgz
+# Sass cache
+**/.sass-cache/
+
+# Compiled css
+/src/assets/css/*
+!/src/assets/css/libs

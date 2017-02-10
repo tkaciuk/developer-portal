@@ -1,0 +1,29 @@
+{
+  "name": "atm-docs",
+  "description": "Adtechmedia's Developer Portal",
+  "version": "0.0.1",
+  "homepage": "https://docs.adtechmedia.io",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./bin/server",
+    "start-debug": "DEBUG=atm-docs:* node ./bin/server",
+    "build": "gulp compile-pages && gulp build-assets",
+    "watcher": "gulp sass:watch"
+  },
+  "devDependencies": {
+    "body-parser": "~1.15.2",
+    "cheerio": "^0.22.0",
+    "cookie-parser": "~1.4.3",
+    "crawler": "^1.0.2",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "fs-extra": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "markdown-it": "^8.2.2",
+    "morgan": "~1.7.0",
+    "twig": "~0.9.5"
+  }
+}

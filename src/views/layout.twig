@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Adtechmedia docs{% endblock %}</title>
+
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <link rel="stylesheet" href="/css/libs/font-awesome.min.css" />
+    {% block css %}{% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+</head>
+<body>
+    <header>
+        <section>
+            <div class="flex-row">
+                <div class="flex-item-6 self-center">
+                    <a class="logo" href="/" >
+                        <img src="/images/logo.svg">
+                    </a>
+                </div>
+                <div class="flex-item-6 self-center">
+                    <nav class="clearfix">
+                        <ul class="pull-right">
+                            <li {% if route == 'case-studies' %} class="active" {% endif %}>
+                                <a href="/case-studies">case studies</a>
+                            </li>
+                            <li {% if route == 'api-docs' %} class="active" {% endif %}>
+                                <a href="/api-docs">api docs</a>
+                            </li>
+                            <li {% if route == 'user-guide' %} class="active" {% endif %}>
+                                <a href="/user-guide">user guide</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+
+    <footer class="bottom-info">
+        Copyright &copy; <a href="//www.mitocgroup.com">Mitoc Group</a> 2016-2017. All rights reserved.
+        By using this site, you agree to <a href="//www.adtechmedia.io/terms/">Terms of Use</a> and <a href="//www.adtechmedia.io/privacy/">Privacy Policy</a>.
+    </footer>
+
+    <script src="/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="/js/libs/jquery.browser.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    {% block js %}{% endblock %}
+</body>
+</html>
