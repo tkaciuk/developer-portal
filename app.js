@@ -4,15 +4,15 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var home = require('./controllers/home');
-var apiDocs = require('./controllers/api-docs');
-var userGuide = require('./controllers/user-guide');
-var caseStudies = require('./controllers/case-studies');
+var home = require('./src/controllers/home');
+var apiDocs = require('./src/controllers/api-docs');
+var userGuide = require('./src/controllers/user-guide');
+var caseStudies = require('./src/controllers/case-studies');
 
 var app = express();
 
 // View engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'src/views'));
 app.set('view engine', 'twig');
 
 app.use(logger('dev'));
@@ -20,12 +20,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// Project's assets
-app.use('/static', express.static(path.join(__dirname, 'web/static')));
-// Third part libraries
-app.use('/libs', express.static(path.join(__dirname, 'web/libs')));
-// Swagger related assets
-app.use('/swagger', express.static(path.join(__dirname, 'web/swagger')));
+// Project assets
+app.use('/js', express.static(path.join(__dirname, 'src/assets/js')));
+app.use('/css', express.static(path.join(__dirname, 'src/assets/css')));
+app.use('/fonts', express.static(path.join(__dirname, 'src/assets/fonts')));
+app.use('/files', express.static(path.join(__dirname, 'src/assets/files')));
+app.use('/images', express.static(path.join(__dirname, 'src/assets/images')));
 
 app.use('/', home);
 app.use('/api-docs', apiDocs);

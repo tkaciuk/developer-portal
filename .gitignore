@@ -4,14 +4,9 @@
 # Dependency directories
 node_modules
 
-# Compiled pages
-web/index.html
-web/api-docs/*
-!web/api-docs/.gitkeep
-web/user-guide/*
-!web/user-guide/.gitkeep
-web/case-studies/*
-!web/case-studies/.gitkeep
+# Distribution folder
+dist/*
+!dist/.gitkeep
 
 # Logs
 logs
@@ -29,3 +24,7 @@ npm-debug.log*
 
 # Sass cache
 **/.sass-cache/
+
+# Compiled css
+/src/assets/css/*
+!/src/assets/css/libs
