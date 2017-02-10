@@ -8,7 +8,7 @@ jQuery(function($) {
    */
   $apiKey.on('change', function() {
     var token = $apiKey[0].value;
-    if(token && token.trim() != "") {
+    if(token && token.trim() != '') {
       swaggerUi.api.clientAuthorizations.add(
         'api_key', new SwaggerClient.ApiKeyAuthorization('X-Api-Key', token, 'header')
       );

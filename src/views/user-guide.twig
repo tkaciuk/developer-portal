@@ -2,18 +2,31 @@
 
 {% block title %}User guide{% endblock %}
 
+{% block head_js %}
+    <script src="/js/libs/jquery-2.2.4.min.js"></script>
+    <script src="/js/flatdoc/legacy.min.js"></script>
+    <script src="/js/flatdoc/flatdoc-0.9.0.min.js"></script>
+    <script src="/js/flatdoc/flatdoc-theme.js"></script>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/libs/flatdoc-theme.css" />
+{% endblock %}
+
 {% block body %}
-
-    <section>
-        <div>
-            {% for item in menuItems %}
-                <a href="#">{{ item }}</a>
-            {% endfor %}
-        </div>
-
-        <div>
-            {{ markdown }}
+    <section role='flatdoc' class='big-h3 large-brief'>
+        <div class='content-root'>
+            <div class='menubar'>
+                <div class='menu section' role='flatdoc-menu'></div>
+            </div>
+            <div role='flatdoc-content' class='content'></div>
         </div>
     </section>
+{% endblock %}
 
+{# Disable jquery (loaded in the header) #}
+{% block jquery %}{% endblock %}
+
+{% block js %}
+    <script src="/js/user-guide.js"></script>
 {% endblock %}
