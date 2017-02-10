@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="/css/main.min.css" />
     <link rel="stylesheet" href="/css/libs/font-awesome.min.css" />
+    {% block head_js %}{% endblock %}
     {% block css %}{% endblock %}
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -47,9 +48,10 @@
         By using this site, you agree to <a href="//www.adtechmedia.io/terms/">Terms of Use</a> and <a href="//www.adtechmedia.io/privacy/">Privacy Policy</a>.
     </footer>
 
-    <script src="/js/libs/jquery-3.1.1.min.js"></script>
-    <script src="/js/libs/jquery.browser.min.js"></script>
-    <script src="/js/main.js"></script>
+    {% block jquery %}
+        <script src="/js/libs/jquery-2.2.4.min.js"></script>
+        <script src="/js/libs/jquery.browser.min.js"></script>
+    {% endblock %}
 
     {% block js %}{% endblock %}
 </body>

@@ -27,6 +27,7 @@ app.use('/fonts', express.static(path.join(__dirname, 'src/assets/fonts')));
 app.use('/files', express.static(path.join(__dirname, 'src/assets/files')));
 app.use('/images', express.static(path.join(__dirname, 'src/assets/images')));
 
+// Page routes
 app.use('/', home);
 app.use('/api-docs', apiDocs);
 app.use('/user-guide', userGuide);

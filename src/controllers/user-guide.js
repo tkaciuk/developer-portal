@@ -1,27 +1,12 @@
 var express = require('express');
 var router = express.Router();
-var fs = require('fs');
-var md = require('markdown-it')();
-var cheerio = require('cheerio');
 
 /**
  * User guide page (slate)
+ * [this page was built on top of https://github.com/rstacruz/flatdoc]
  */
 router.get('/', function(req, res, next) {
-  var readmeMd = fs.readFileSync('src/views/parts/readme.md', 'utf8'),
-      readmeHtml = md.render(readmeMd),
-      $ = cheerio.load(readmeHtml),
-      menuItems = [];
-
-  $('h1').each(function(i, elem) {
-    menuItems[i] = $(elem).text();
-  });
-
-  res.render('user-guide', {
-    route: 'user-guide',
-    menuItems: menuItems,
-    markdown: readmeHtml
-  });
+  res.render('user-guide', {route: 'user-guide'});
 });
 
 module.exports = router;
