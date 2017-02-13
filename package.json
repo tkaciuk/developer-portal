@@ -7,9 +7,10 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./bin/server",
+    "build-assets": "gulp build-assets",
     "start-debug": "DEBUG=atm-docs:* node ./bin/server",
-    "build": "gulp compile-pages && gulp build-assets",
-    "watcher": "gulp sass:watch"
+    "watcher": "gulp sass:watch",
+    "deploy": "sh ./bin/deploy.sh"
   },
   "devDependencies": {
     "body-parser": "~1.15.2",

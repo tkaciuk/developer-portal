@@ -7,11 +7,19 @@ This repository stores the code and data for [docs.adtechmedia.io][1].
 
 ### Step 1. Pre-requisites
 
-- [x] Ensure you have the latest AWS CLI installed v1.11.19+
 - [x] Ensure you have installed Node.js 4+
+- [x] Ensure you have the latest AWS CLI installed v1.11.19+ _(for deploy option only)_
 - [ ] Install all dependencies `npm install`
 
-### Step 2. Run
+### Step 2. Build assets
+
+Run compile command to be ready for deploy
+
+```bash
+npm run build-assets
+```
+
+### Step 3. Run application
 
 Run server
 
@@ -19,7 +27,7 @@ Run server
 npm run start
 ```
 
->the same in debug mode: `npm run start-debug`
+>The same in debug mode: `npm run start-debug`
 
 ### Step 3. Edit
 
@@ -27,17 +35,14 @@ Go to [localhost:3000][2] and adjust the project for your needs
 
 >Run sass watcher to see styling changes in realtime: `npm run watcher`
 
-### Step 4. Build
-
-Run compile command to be ready for deploy
-
-```bash
-npm run build
-```
-
 ### Step 4. Deploy
 
-Still in progress...
+Run deploy command files to S3
+
+```bash
+npm run deploy
+```
+>Make sure that you have enough permissions to upload in S3 bucket
 
 ## Sponsors
 
