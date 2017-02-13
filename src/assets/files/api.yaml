@@ -34,7 +34,7 @@ paths:
             x-amzn-original-RequestId:
               type: "string"
   /atm-admin/theme-config/update:
-    put:
+    post:
       summary: "Update Theme Config"
       consumes:
       - "application/json"
@@ -59,14 +59,14 @@ paths:
             x-amzn-original-RequestId:
               type: "string"
   /atm-admin/theme-config/retrieve:
-    put:
+    get:
       summary: "Retrieve Theme Config"
       consumes:
       - "application/json"
       produces:
       - "application/json"
       parameters:
-      - in: "body"
+      - in: "query"
         name: "ThemeConfig"
         required: true
         schema:
@@ -224,7 +224,7 @@ paths:
       produces:
       - "application/json"
       parameters:
-      - in: "body"
+      - in: "query"
         name: "Content"
         required: true
         schema:
@@ -467,7 +467,7 @@ paths:
       produces:
       - "application/json"
       parameters:
-      - in: "body"
+      - in: "query"
         name: "Empty"
         required: true
         schema:
@@ -494,7 +494,7 @@ paths:
       produces:
       - "application/json"
       parameters:
-      - in: "body"
+      - in: "query"
         name: "Property"
         required: true
         schema:
@@ -578,7 +578,6 @@ definitions:
   Empty:
     type: "object"
     title: "Empty Payload"
-
   Id:
     type: "object"
     title: "Entity Id"
@@ -619,7 +618,6 @@ definitions:
         description: "Supported Countries"
         items:
           $ref: "#/definitions/SupportedCountry"
-
   ApiGatewayKeyModelCreate:
     type: "object"
     title: "Api Gateway Key Schema"
@@ -698,7 +696,6 @@ definitions:
       PluginVersion:
         type: "string"
         description: "Caller Plugin Version"
-
   ContentModelDelete:
     type: "object"
     title: "Content Schema"
@@ -781,7 +778,6 @@ definitions:
         externalDocs:
           description: "Configuration Javascript Source File (@see 'defaults' section)"
           url: "https://github.com/MitocGroup/atm/blob/dev/plugin/src/lib/config/core.js#L11"
-
   EmailTemplateModelUpdate:
     type: "object"
     title: "Email Template Schema"
@@ -861,7 +857,6 @@ definitions:
       PropertyId:
         type: "string"
         description: "Assigned Property Identifier"
-
   PropertyModelUpdateConfig:
     type: "object"
     title: "Property Schema"
@@ -983,7 +978,6 @@ definitions:
         externalDocs:
           description: "Configuration Javascript Source File"
           url: "https://github.com/MitocGroup/atm/blob/dev/plugin/src/lib/config/core.js#L7"
-
   ThemeConfigModel:
     type: "object"
     title: "Theme Config Schema"
@@ -1019,59 +1013,59 @@ definitions:
         type: "object"
         description: "Additional Configuration Metadata Object"
   ThemeConfigModelCreate:
-      type: "object"
-      title: "Property Schema"
-      required: [ "PropertyId", "ThemeId", "PlatformId", "Config" ]
-      properties:
-        PropertyId:
-          type: "string"
-          description: "Property Identifier"
-        ThemeId:
-          type: "string"
-          description: "Unique Theme Identifier"
-        ThemeVersion:
-          type: "string"
-          description: "Theme Version"
-        ThemeName:
-          type: "string"
-          description: "Human Readable Theme Name"
-        PlatformId:
-          type: "string"
-          description: "Platform Identifier (e.g. Wordpress, Drupal)"
-        PlatformVersion:
-          type: "string"
-          description: "Platform Version"
-        ConfigName:
-          type: "string"
-          description: "Human Readable Configuration Name"
-        Config:
-          type: "object"
-          description: "Configuration Object"
-        Metadata:
-          type: "object"
-          description: "Additional Configuration Metadata Object"
+    type: "object"
+    title: "Property Schema"
+    required: [ "PropertyId", "ThemeId", "PlatformId", "Config" ]
+    properties:
+      PropertyId:
+        type: "string"
+        description: "Property Identifier"
+      ThemeId:
+        type: "string"
+        description: "Unique Theme Identifier"
+      ThemeVersion:
+        type: "string"
+        description: "Theme Version"
+      ThemeName:
+        type: "string"
+        description: "Human Readable Theme Name"
+      PlatformId:
+        type: "string"
+        description: "Platform Identifier (e.g. Wordpress, Drupal)"
+      PlatformVersion:
+        type: "string"
+        description: "Platform Version"
+      ConfigName:
+        type: "string"
+        description: "Human Readable Configuration Name"
+      Config:
+        type: "object"
+        description: "Configuration Object"
+      Metadata:
+        type: "object"
+        description: "Additional Configuration Metadata Object"
   ThemeConfigModelUpdate:
-      type: "object"
-      title: "Property Schema"
-      required: [ "Id", "Config" ]
-      properties:
-        Id:
-          type: "string"
-          description: "Unique Configuration Identifier"
-        Config:
-          type: "object"
-          description: "Configuration Object"
-        Metadata:
-          type: "object"
-          description: "Additional Configuration Metadata Object"
+    type: "object"
+    title: "Property Schema"
+    required: [ "Id", "Config" ]
+    properties:
+      Id:
+        type: "string"
+        description: "Unique Configuration Identifier"
+      Config:
+        type: "object"
+        description: "Configuration Object"
+      Metadata:
+        type: "object"
+        description: "Additional Configuration Metadata Object"
   ThemeConfigModelRetrieve:
-      type: "object"
-      title: "Property Schema"
-      description: "You should provide Id or Theme"
-      properties:
-        Id:
-          type: "string"
-          description: "Unique Configuration Identifier"
-        Theme:
-          type: "object"
-          description: "Theme String (e.g. 'theme1', 'theme1@v1.0.1')"
+    type: "object"
+    title: "Property Schema"
+    description: "You should provide Id or Theme"
+    properties:
+      Id:
+        type: "string"
+        description: "Unique Configuration Identifier"
+      Theme:
+        type: "object"
+        description: "Theme String (e.g. 'theme1', 'theme1@v1.0.1')"
