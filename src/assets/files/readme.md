@@ -1,17 +1,18 @@
 # Getting Started
 
 ## Introduction
-ATM stands for AdTechMedia, the adtech platform with micropayments capabilities for media content.
-ATM API is a set of web services designed to support the AdTechMedia platform. The white labeled nature
-of AdTechMedia allows direct integration into any web site or web application as native look and feel.
+ATM stands for AdTechMedia, the advertising platform with micropayments capabilities for media content
+monetization. ATM API is a set of web services designed to support the AdTechMedia platform. The
+white labeled nature of AdTechMedia allows direct integration into any web site or web application
+as native look and feel.
 
 ### Base endpoints
 AdTechMedia platform runs multiple environments. The following are the base endpoints per environment:
 
-- Production environment: https://api.adtechmedia.io/v1
-- Development environment: https://api-dev.adtechmedia.io/v1
-- Staging environment: https://api-stage.adtechmedia.io/v1
-- Testing environment: https://api-test.adtechmedia.io/v1
+- [x] Production environment: https://api.adtechmedia.io/v1
+- [x] Development environment: https://api-dev.adtechmedia.io/v1
+- [ ] Staging environment: https://api-stage.adtechmedia.io/v1
+- [ ] Testing environment: https://api-test.adtechmedia.io/v1
 
 ### Authorization
 In order to make calls to ATM APIs, the HTTP request must include `X-Api-Key` as HTTP header.
@@ -53,8 +54,7 @@ curl -XPUT "$ATM_API_BASE/atm-admin/api-gateway-key/create" \
 1.2 Save response as `environmental variable(s)` for further use:
 
 ```shell
-### export ATM_API_KEY as the value associated to `$response.Key`
-export ATM_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+export ATM_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" // the value associated to `$response.Key`
 ```
 
 > Any further requests to ATM APIs must include this API key
@@ -65,24 +65,25 @@ export ATM_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 ```shell
 curl -XPUT "$ATM_API_BASE/atm-admin/property/create" \
-     -H "X-Api-Key: $ATM_API_KEY" \
-     -d '{ \
-        "Name": "Your web site / web application name", \
-        "Website": "https://example.com", \
-        "SupportEmail": "email@example.com", \
-        "Country": "USA" \
-        "ConfigDefaults": { \
-            "targetModal": { \
-                "targetCb": "function(modalNode, cb) { modalNode.mount(document.getElementById(\'#header\'), modalNode.constructor.MOUNT_APPEND) }", \
-                "toggleCb": "function(cb) { cb(true) }" \
-            }, \
-            "content": { \
-                "authorCb": "function(onReady) { onReady({ fullName: \'Administrator\', avatar: \'https://avatars.io/twitter/mitocgroup\' }) }", \
-                "container": "main > article.story", \
-                "selector": "h3, p, div.paragraph, cite" \
-            } \
-        } \
-     }'
+    -H "X-Api-Key: $ATM_API_KEY" \
+    -H "Content-Type: application/json" \
+    -d '{
+        "Name": "Your web site / web application name",
+        "Website": "https://example.com",
+        "SupportEmail": "hello@adtechmedia.io",
+        "Country": "USA",
+        "ConfigDefaults": {
+            "targetModal": {
+                "targetCb": "function(modalNode, cb) { modalNode.mount(document.getElementById('#header'), modalNode.constructor.MOUNT_APPEND) }",
+                "toggleCb": "function(cb) { cb(true) }"
+            },
+            "content": {
+                "authorCb": "function(onReady) { onReady({fullName: 'Administrator', avatar: 'https://avatars.io/twitter/mitocgroup' }) }",
+                "container": "main > article.story",
+                "selector": "h3, p, div.paragraph, cite"
+            }
+        }
+    }'
 ```
 
 `ConfigDefaults` basic parameters explanation:
@@ -109,15 +110,11 @@ curl -XPUT "$ATM_API_BASE/atm-admin/property/create" \
 2.2 Save response as `environmental variable(s)` for further use:
 
 ```shell
-### export ATM_API_PROPERTY as the value associated to `$response.Id`
-export ATM_API_PROPERTY="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-### export ATM_JS as the value associated to `$response.BuildPath`
-export ATM_JS="$ATM_API_BASE/atm-admin/$ATM_API_PROPERTY/atm.min.js"
+export ATM_API_PROPERTY="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" // the value associated to `$response.Id`
+export ATM_JS="$ATM_API_BASE/atm-admin/$ATM_API_PROPERTY/atm.min.js" // the value associated to `$response.BuildPath`
 ```
 
-> DON'T construct ATM_JS manually because the structure might be changed in future. Always use `$response.BuildPath` value.
-
-### Step 3. Place `atm.min.js` to the bottom of the web page
+### Step 3. Place `atm.min.js` to the buttom of the web page
 
 ```html
   <!-- Place It At The End of The Content Page -->
